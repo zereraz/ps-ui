@@ -1,5 +1,6 @@
-exports.addToBody = function(html) {
+exports.addToBody = function(node) {
+  console.log(node);
   return function() {
-    document.body.innerHTML = html;
+    document.body.appendChild(node);
   }
 }
